@@ -1,0 +1,110 @@
+*,
+*::before,
+*::after {
+    -webkit-box-sizing: border-box;
+       -moz-box-sizing: border-box;
+            box-sizing: border-box;
+
+}
+
+
+div.image {
+  animation-name: slider;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  position: relative;
+  width: 15%;
+  float: left;
+  margin: 20px;
+
+}
+
+@keyframes slider {
+  0% {margin-top: 0px;}
+  25% {margin-top: 150px;}
+  50% {margin-top: 250px;}
+  100% {margin-top: 400px;}
+}
+
+div.image2 {
+  animation-name: slideUp;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  position: relative;
+  width: 15%;
+  float: left;
+  margin: 20px;
+
+}
+
+@keyframes slideUp {
+  0% {margin-top: 400px;}
+  25% {margin-top: 250px;}
+  50% {margin-top: 150px;}
+  100% {margin-top: 0px;}
+}
+
+div {
+  border-bottom: 1px solid black;
+  margin: 10px;
+  padding-bottom: 10px;
+}
+
+label {
+  width: 250px;
+  float: left;
+  text-align: right;
+  padding-right: 10px;
+}
+
+h1 {
+  text-align: center;
+}
+input:focus {
+  background-color: green;
+  border-color: red;
+    border-radius: 5px;
+    background-image: url("../img/snow.jpg")
+}
+
+button:hover {
+  background-color: green;
+  border-radius: 5px;
+  margin-left: 15px;
+}
+
+body {
+  background-image: url("../img/swoosh.png");
+  font-family: 'Pacifico', cursive;
+}
+
+border {
+  position: absolute;
+}
+
+h1{
+  position: absolute;
+left: 200px;
+top: 20px;
+z-index: -1;
+}
+
+form {
+  position: absolute;
+  left: 100px;
+  top: 100px;
+  z-index: -1;
+}
+
+button {
+  position: absolute;
+  left: 300px;
+  top: 300px;
+  z-index: -1;
+}
+img {
+  width: 181px;
+  height: 172px;
+}
